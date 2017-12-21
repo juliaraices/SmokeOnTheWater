@@ -1,0 +1,11 @@
+## things to be ignored when version controling
+
+# files:
+*.RData # * = anything
+*.output
+*.input
+*test*
+
+# folders:
+SRR*/
+RNA-seq*/
