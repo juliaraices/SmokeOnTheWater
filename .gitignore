@@ -5,6 +5,9 @@
 *.output
 *.input
 *test*
+*.out
+*fastq
+*.temp
 
 # folders:
 SRR*/
