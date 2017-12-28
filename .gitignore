@@ -8,6 +8,9 @@
 *.out
 *fastq
 *.temp
+y*
+*.fa
+*.gz
 
 # folders:
 SRR*/

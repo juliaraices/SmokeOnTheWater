@@ -190,3 +190,8 @@ srun --cpu_bind=verbose fastq-dump --skip-technical --readids --split-files SRR4
 
 
 # to get to the SRR number you should: find the SRP number and search for it at www.ncbi.nlm.gov/sra and get it for each experiment run | find the GEO acession number and look for it in the same website, get numbers for each run
+
+# getting the human genome
+wget https://tinyurl.com/y7qvmwnq # annotation
+wget https://tinyurl.com/ycajnttd # human genome v hg38
+

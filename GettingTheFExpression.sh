@@ -7,11 +7,14 @@
 #SBATCH --mail-type=ALL
 
 # loads module from which raw data should be dowloaded
-export OMP_NUM_THREADS=1 # this makes it use only one thread
-module load SRA-Toolkit/2.8.1-3 # this is for it to know were to get the data from
+export OMP_NUM_THREADS=5 # this makes it usefive threads
 
-# downloads reads for each experiment/sample
-# when we have paired end file we say "--split-files" so the program knows it has paired end data. If we don't have paired end, just don't use that command =)
+# Getting 
+
+srun --cpu_bind=verbose ./STAR/source/STAR --runThreadN 5 --runMode genomeGenerate --genomeDir --genomeFastaFiles --sjdbGTFfile --sjdbOverhang 100
+
+srun --cpu_bind=verbose ./STAR/source/STAR --runThread 5 --genomeDir --readFilesIn
+
 ## [mouse | ref 8] Gompers et al 2017
 ### RNA-seq Heterozygous P56 adult 
 srun --cpu_bind=verbose fastq-dump --skip-technical --readids SRR5629564
