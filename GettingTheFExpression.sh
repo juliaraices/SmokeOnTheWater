@@ -21,10 +21,10 @@ srun --cpu_bind=verbose ./STAR/source/STAR --runThreadN 5 --runMode genomeGenera
 
 
 ## [mouse | ref 8] Gompers et al 2017
-srun --cpu_bind=verbose ./STAR/source/STAR --runThread 5 --genomeDir Mouse --readFilesIn Gompers2017 --outSAMtype BAM SortedByCoordinate --alignIntronMax 100000 --outFilterIntronMotifs RemoveNoncanonical --outFilterMultimapNmax 1 --quantMode GeneCounts
+srun --cpu_bind=verbose ./STAR/source/STAR --runThreadN 5 --genomeDir Mouse --readFilesIn Gompers2017 --outSAMtype BAM SortedByCoordinate --alignIntronMax 100000 --outFilterIntronMotifs RemoveNoncanonical --outFilterMultimapNmax 1 --quantMode GeneCounts
 ## [mouse | ref 10] Katayama et al 2016 -> theoretically it is available, but it's impossible to find 
 ## [mouse | ref 14] Nishiyama et al 2009 -> no available raw data (for more information Jules has a nice resume of all we have
 ## [mouse | ref 16] Platt et al 2017
-srun --cpu_bind=verbose ./STAR/source/STAR --runThread 5 --genomeDir Mouse --readFilesIn Platt2017 --outSAMtype BAM SortedByCoordinate --alignIntronMax 100000 --outFilterIntronMotifs RemoveNoncanonical --outFilterMultimapNmax 1 --quantMode GeneCounts
+srun --cpu_bind=verbose ./STAR/source/STAR --runThreadN 5 --genomeDir Mouse --readFilesIn Platt2017 --outSAMtype BAM SortedByCoordinate --alignIntronMax 100000 --outFilterIntronMotifs RemoveNoncanonical --outFilterMultimapNmax 1 --quantMode GeneCounts
 ## [human | ref 19] Wang et al 2017
-srun --cpu_bind=verbose ./STAR/source/STAR --runThread 5 --genomeDir Mouse --readFilesIn Wang2017 --outSAMtype BAM SortedByCoordinate --alignIntronMax 100000 --outFilterIntronMotifs RemoveNoncanonical --outFilterMultimapNmax 1 --quantMode GeneCounts
+srun --cpu_bind=verbose ./STAR/source/STAR --runThreadN 5 --genomeDir Mouse --readFilesIn Wang2017 --outSAMtype BAM SortedByCoordinate --alignIntronMax 100000 --outFilterIntronMotifs RemoveNoncanonical --outFilterMultimapNmax 1 --quantMode GeneCounts
