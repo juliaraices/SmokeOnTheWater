@@ -192,6 +192,27 @@ srun --cpu_bind=verbose fastq-dump --skip-technical --readids --split-files SRR4
 # to get to the SRR number you should: find the SRP number and search for it at www.ncbi.nlm.gov/sra and get it for each experiment run | find the GEO acession number and look for it in the same website, get numbers for each run
 
 # getting the human genome
-wget https://tinyurl.com/y7qvmwnq # annotation
-wget https://tinyurl.com/ycajnttd # human genome v hg38
-
+srun --cpu_bind=verbose wget https://tinyurl.com/y7qvmwnq # human gencode annotation
+srun --cpu_bind=verbose wget https://tinyurl.com/ycajnttd # human genome v hg38
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.1.fa.gz # mouse chromosome 1
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.2.fa.gz # mouse chromosome 2
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.3.fa.gz # mouse chromosome 3
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.4.fa.gz # mouse chromosome 4
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.5.fa.gz # mouse chromosome 5
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.6.fa.gz # mouse chromosome 6
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.7.fa.gz # mouse chromosome 7
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.8.fa.gz # mouse chromosome 8
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.9.fa.gz # mouse chromosome 9
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.10.fa.gz # mouse chromosome 10
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.11.fa.gz # mouse chromosome 11
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.12.fa.gz # mouse chromosome 12
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.13.fa.gz # mouse chromosome 13
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.14.fa.gz # mouse chromosome 14
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.15.fa.gz # mouse chromosome 15
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.16.fa.gz # mouse chromosome 16
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.17.fa.gz # mouse chromosome 17
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.18.fa.gz # mouse chromosome 18
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.19.fa.gz # mouse chromosome 19
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.X.fa.gz # mouse chromosome X
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.chromosome.Y.fa.gz # mouse chromosome Y
+srun --cpu_bind=verbose wget ftp://ftp.ensembl.org/pub/release-91/gtf/mus_musculus/Mus_musculus.GRCm38.91.gtf.gz # mouse genome annotation
