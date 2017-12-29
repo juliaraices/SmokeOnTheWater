@@ -11,6 +11,8 @@
 y*
 *.fa
 *.gz
+*.log
+slurm*
 
 # folders:
 SRR*/
