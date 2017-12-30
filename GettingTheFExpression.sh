@@ -2,7 +2,7 @@
 #
 #SBATCH --job-name="CORE COURSE getting ALL THE DATA! o/" # job name
 #SBATCH --time=96:00:00 #maximum runtime
-#SBATCH --mem=10G #maximum memmory allocation
+#SBATCH --mem=50G #maximum memmory allocation
 #SBATCH --mail-user=julia.raices@ist.ac.at #send e-mail to user for everything
 #SBATCH --mail-type=ALL
 # loads module from which raw data should be dowloaded
